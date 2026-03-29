@@ -52,7 +52,7 @@
         };
 
         num {
-            bindings = <&kp KP_NLCK>;
+            bindings = <&kp KP_NUMLOCK>;
             key-positions = <14 15>;
         };
     };
