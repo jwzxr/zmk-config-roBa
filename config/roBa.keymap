@@ -13,18 +13,7 @@
     quick-tap-ms = <0>;
 };
 
-/*
- * 現行ZMK向け:
- * 旧:
- *   &trackball {
- *       automouse-layer = <4>;
- *       scroll-layers = <5>;
- *   };
- *
- * 新:
- *   automouse-layer -> &zip_temp_layer
- *   scroll-layers   -> layer override + &zip_xy_to_scroll_mapper
- */
+
 &trackball_listener {
     input-processors = <&zip_temp_layer 4 700>;
 
