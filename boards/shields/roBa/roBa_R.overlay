@@ -74,7 +74,3 @@ trackball: trackball@0 {
     y-input-code = <INPUT_REL_Y>;
 };
 
-/* roBa.dtsi 側に left_encoder ノードがあるなら有効化 */
-&left_encoder {
-    status = "okay";
-};
