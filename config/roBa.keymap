@@ -13,8 +13,15 @@
     quick-tap-ms = <0>;
 };
 
+&mouse_runtime_input_processor {
+    temp-layer-enabled;
+    temp-layer = <4>;
+    temp-layer-activation-delay-ms = <0>;
+    temp-layer-deactivation-delay-ms = <700>;
+};
+
 &trackball_listener {
-    input-processors = <&zip_temp_layer 4 700 &mouse_runtime_input_processor>;
+    input-processors = <&mouse_runtime_input_processor>;
 
     scroll_layer {
         layers = <5>;
